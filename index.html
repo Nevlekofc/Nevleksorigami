@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/animatio.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+  <title>nevlek.co.mz</title>
+</head>
+<header>
+<nav class="navbar">
+  <h2 class="titulo"><img src="img/logo.png" alt="nevlekxr1@gmail.com">NEVLEK <span class="titulo">ORIGAMI</span></h2>
+  <ul class="heloword">
+    <li><a id="menu"></a></li>
+  <li><a href="#k-incial" class="icon hom">Home</a></li>
+  <li><a href="#k-produt" class="icon product">Produtos</a></li>
+  <li><a href="#k-info" class="icon sobr">Sobre</a></li>
+  <li><a href="#k-contact" class="icon contact">Contacto</a></li>
+  </ul>
+  <div class="view-menu" id="view-menumobile">
+    
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+</nav>
+<img src="img/wave_nevlek.png" alt="" height="50px" width="100%">
+  <script src="js/index.js"></script>
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .drawer {
+            position: fixed;
+            right: -300px;
+            top: 0;
+            width: 300px;
+            height: 100%;
+            background: #212121;
+            color: #fff;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+            transition: right 0.3s;
+        }
+        .drawer>p{
+          display: flex;
+          align-items: center;
+          text-align: center;
+        }
+        .nevleklovely{
+          display: flex;
+          text-align: center;
+          align-items: center;
+        }
+        .nevleklovely>span{
+            width: 80%;
+  background-color: #ffffff0d;
+  border: 1px solid #ffffff1a;
+  padding-block: 0.5em;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 8px;
+  margin: 19px;
+        }
+        .drawer.open {
+            right: 0;
+        }
+    </style>
+</header>
+<body>
+<div class="container">
+  <div class="card-ivisible" id="k-incial">
+     <figure>
+        <div class="vidro" style="position: relative;">
+        <img src="img/background.png" alt="" >
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 9px;">
+          <h1>Bem Vindo(a)</h1>
+          <p>...</p>
+        </div>
+    </div>
+  <h2 class="textView2">Visita Os Nosso Produtos Inovadores!</h2>
+  </figure> 
+  </div>
+  <div class="newtext">
+    <p>Você está cansado de um computador, Mouse, Teclados que atrasa seu trabalho e diversão? Conheça nosso produto revolucionário que promete transformar a performance do seu dia a dia! 
+</p>
+<p>Não perca tempo!</p>
+<p>Navegue pela nossa coleção e encontre o produto perfeito para você ou para presentear alguém especial.</p>
+  </div>
+  <!-- inicio cards-->
+  <div class="card-container" id="k-produt">
+    <div class="card">
+      <img src="img/Enhancemouse.png" alt="">
+      <div class="nevlek-text">
+        <h2>Enhance Scoria Mouse</h2>
+        <p>Descrição:Corpo de metal alumínio, Cabo trançado USB.
+ Possui 7 botões programáveis.
+Iluminação RGB personalizável
+   </p>
+   </div>
+      <div class="pay">
+     <p>Comprar</p>
+     <span onclick="toggleDrawer()">2024MT</span>
+      </div>
+    </div>
+        <div class="card">
+      <img src="img/ASUS TUF.png" alt="">
+      <div class="nevlek-text">
+        <h2>ASUS TUF GeForce RTX</h2>
+        <p>Memória: 8GB
+   CUDA Cores: 4352
+   Descrição: Configuração ideal para jogos em FullHD e 2K.
+</p>
+      </div>
+         <div class="pay">
+     <p>Comprar</p>
+     <span onclick="toggleDrawer()">2024MT</span>
+   </div>
+    </div>
+ <div class="card">
+      <img src="img/Enhanceheadphon.png" alt="">
+      <div class="nevlek-text">
+  <h2>Enhance Scoria Headphone</h2>
+  <p>Driver de 40mm. Microfone com design retrátil. Almofadas macias e uma faixa de cabeça ajustável.</p>
+      </div>
+         <div class="pay">
+     <p>Comprar</p>
+     <span onclick="toggleDrawer()">2024MT</span>
+   </div>
+    </div>
+     <div class="card">
+      <img src="img/RazerDeathAdder.png" alt="">
+      <div class="nevlek-text">
+        <h2>Razer DeathAdder V2</h2>
+        <p>Descrição: Um dos mouses mais populares entre gamers, conhecido pelo conforto e precisio. otimo para longas sessões de uso. 
+</p>
+      </div>
+         <div class="pay">
+     <p>Comprar</p>
+     <span onclick="toggleDrawer()">2024MT</span>
+   </div>
+    </div>
+    <div class="card-container">
+         <div class="card">
+      <img src="img/High-FidelitySports.png" alt="">
+      <div class="nevlek-text">
+        <h2>High-Fidelity Sports Headphones</h2>
+        <p>Descrição: Este modelo é sem fio e com cancelamento de ruido, ideal para manter a concentração.
+ </p>
+      </div>
+          <div class="pay">
+     <p>Comprar</p>
+     <span onclick="toggleDrawer()">2024MT</span>
+   </div>
+    </div>
+         <div class="card">
+      <img src="img/RazerBlackWidow.png" alt="">
+      <div class="nevlek-text">
+        <h2>Razer BlackWidow</h2>
+        <p>Descrição:Um teclado mecanico popular entre gamers, com switches Razer que oferecem uma resposta textil excelente.</p>
+      </div>
+         <div class="pay">
+     <p>Comprar</p>
+     <span onclick="toggleDrawer()">2024MT</span>
+   </div>
+    </div>
+        <div class="card">
+      <img src="img/IntelGaudi.png" alt="">
+      <div class="nevlek-text">
+        <h2>Intel Gaudi 3 AI</h2>
+        <p>Descrição:Esperado para estar disponível no Q3 de 2024, projetado para treinamento e inferência de IA.</p>
+      </div>
+         <div class="pay">
+     <p>Comprar</p>
+     <span onclick="toggleDrawer()">2024MT</span>
+   </div>
+    </div>
+         <div class="card">
+      <img src="img/G502HERO.png" alt="">
+      <div class="nevlek-text">
+        <h2>Logitech G502 HERO</h2>
+        <p>Descrição:Um mouse gamer com alta precisio e personalizado. Possui 11 botões programmveis, ideal para jogos.</p>
+      </div>
+         <div class="pay">
+     <p>Comprar</p>
+     <span onclick="toggleDrawer()">2024MT</span>
+   </div>
+    </div>
+  </div>
+  <div class="drawer" id="drawer">
+    <img src="img/shop.png" height="200px" background-size="cover"width="80%"alt="">
+    <h2>Comprando</h2>
+    <p>O Produto custa 2024MT e foi adicionado ão Carrinho</p>
+    <div class="nevleklovely">
+      <span onclick="toggleDrawer()">Fechar</span>
+    </div>
+</div>
+    </div>
+    <!-- fim cards-->
+  </div>
+  <div class="newtext">
+    <p>Abaixo você encontrará informações básicas sobre o criador deste site e detalhes importantes para entrar em contato conosco. 
+</p>
+  </div>
+  <div class="iformation-card" id="k-info">
+    <div class="information-card2">    <h2>INFORMAÇÕES BASICAS</h2></div>
+    <div class="cardinfor">
+      <h1>Creditos</h1>
+      <div class="cardinfo-conten">
+        <h2>Todos os Creditos reservadod a min Nevlek.</h2>
+      </div>
+    </div>
+        <div class="cardinfor">
+      <h1>Informação</h1>
+      <div class="cardinfo-conten">
+        <h2>A pagina foi criada no intuito de melhorar as minhas abilidades.</h2>
+      </div>
+    </div>
+        <div class="cardinfor">
+        <h1>Suporte</h1>
+      <div class="cardinfo-conten">
+        <h2>Qualquer duvida que você tenha é só mandar mensagem no meu e- mail.</h2>
+      </div>
+    </div>
+  </div>
+  <!--inicio formulario--->
+  <div class="formulary" id="k-contact">
+    <form action="https://formsubmit.co/nevlekxr1@email.com" method="POST">
+    <h1><label for="">Nome</label></h1>
+     <input type="text" name="name" required>
+    <h1><label for="">E-mail</label></h1>
+     <input type="email" name="email" required>
+     <input type="hidden" name="_template" value="box">
+   <h1><label>Comentar Sobre o Site</label></h1>
+     <textarea name="" placeholder="Sua mensagem aqui" required></textarea>
+    <button type="submit">Send</button>
+</form>
+  </div>
+    <script src="js/card.js"></script>
+        <script src="js/Nevlek1.js"></script>
+    <script src="js/Nevlek2.js"></script>  
+    <script>
+    function toggleDrawer() {
+        const drawer = document.getElementById('drawer');
+        drawer.classList.toggle('open');
+    }
+</script>
+</body>
+<footer class="for">
+    <div class="about">
+        <h2>Sobre Nós</h2>
+        <p>A nevlek é uma empresa dedicada a oferecer as melhores soluções para nossos clientes. Agradeço por visitar o meu site!</p>
+    </div>
+    <div class="footer-text">
+    </div>
+    <div class="contacct">
+      <h1>Contactos</h1>
+      <p>caso queira entrar em contacto ou seguir me nas redes socias </p>
+     <div class="social-media">
+        <a href="https://www.instagram.com/kelvenantonioxr1?igsh=eGF4a3NpOTVyaXBs" target="_blank" class="instagram">Instagram</a>
+        <a href="tiktok.com/@nevlekofc" target="_blank" class="tiktok">TikTok</a>
+        <a href="nevlekxr1@gmail.com" class="gmail">Gmail</a>
+    </div>
+        </div>
+        <p></p>
+                <p>&copy; 2024 Todos os direitos reservados a <p>NevlekXr1.</p></p>
+</footer>
+</html>
