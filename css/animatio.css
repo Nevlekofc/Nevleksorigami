@@ -1,0 +1,20 @@
+/*animacao nevlek1 style zip*/
+.card {
+  transform: scaleY(0);
+ transition: transform 0.5s ease-out;
+    overflow: hidden;
+}
+.card.visible {
+    transform: scaleY(1);
+}
+/*animacao nevlek2 style cube*/
+
+.cardinfor {
+  transform: rotateY(90deg);
+    transition: transform 0.5s ease-out;
+    perspective: 1000px;
+}
+
+.cardinfor.visible {
+    transform: rotateY(0);
+}
